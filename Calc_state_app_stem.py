@@ -46,12 +46,36 @@ class main_window(QWidget, Ui_Form):
         if nChecked!=2:
             return
 
-        self.Steam.P=#$JES MISSING CODE HERE$  read from appropriate line edit and convert to floating point number if box checked, otherwise set to None
-        self.Steam.T=#$JES MISSING CODE HERE$  read from appropriate line edit and convert to floating point number if box checked, otherwise set to None
-        self.Steam.x=#$JES MISSING CODE HERE$  read from appropriate line edit and convert to floating point number if box checked, otherwise set to None
-        self.Steam.h=#$JES MISSING CODE HERE$  read from appropriate line edit and convert to floating point number if box checked, otherwise set to None
-        self.Steam.s=#$JES MISSING CODE HERE$  read from appropriate line edit and convert to floating point number if box checked, otherwise set to None
-        self.Steam.v=#$JES MISSING CODE HERE$  read from appropriate line edit and convert to floating point number if box checked, otherwise set to None
+        if self.Steam.P():
+            float(self.Steam.P())
+        else:
+            None
+
+        if self.Steam.T():
+            float(self.Steam.T())
+        else:
+            None
+
+        if self.Steam.x():
+            float(self.Steam.x())
+        else:
+            None
+
+        if self.Steam.h():
+            float(self.Steam.h())
+        else:
+            None
+
+        if self.Steam.s():
+            float(self.Steam.s())
+        else:
+            None
+
+        if self.Steam.v():
+            float(self.Steam.v())
+        else:
+            None
+
 
         self.Steam.calc()
         state=self.Steam
